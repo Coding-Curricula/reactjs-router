@@ -9,6 +9,7 @@ export default function Header() {
 
             <nav>
                 <Link to='/view'>View Product Details</Link>
+                <br />
                 <Link to='/add'>Add Product</Link>
             </nav>
 

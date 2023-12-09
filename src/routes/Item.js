@@ -14,12 +14,15 @@ export default function Item({ list, handlerDelete }) {
             <p>Price: {product.price}</p>
             <p>Quantity: {product.quantity}</p>
             <p>Discount: {product.discount}</p>
+            <button onClick={() => navigate(`/edit/${id}`)}>Edit</button>
+
             <button
                 onClick={() => {
                     handlerDelete(id);
                     navigate('/view');
                 }}
             >Delete</button>
+
         </div>
     )
 }
